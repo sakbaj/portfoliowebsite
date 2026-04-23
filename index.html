@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sakshi — Creative Developer Portfolio">
+    <title>Saksham — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav class="nav" id="navbar">
+        <a href="#hero" class="nav__logo"><span class="logo-bracket">{</span> S <span class="logo-bracket">}</span></a>
+        <ul class="nav__links">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <div class="toggle-track">
+                <span class="toggle-icon sun">&#9728;</span>
+                <span class="toggle-icon moon">&#9790;</span>
+                <div class="toggle-thumb"></div>
+            </div>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="#about" class="mobile-menu__link">About</a></li>
+            <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+            <li><a href="#projects" class="mobile-menu__link">Projects</a></li>
+            <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <p class="hero__greeting animate-in">Hello, I'm</p>
+            <h1 class="hero__name animate-in delay-1">Saksham</h1>
+            <div class="hero__title-wrapper animate-in delay-2">
+                <span class="hero__title">Aspiring Software Developer</span>
+                <span class="hero__cursor">|</span>
+            </div>
+            <p class="hero__subtitle animate-in delay-3">Aspiring software developer skilled in full‑stack web apps,
+                backend versatility, database integration, authentication, deployment, and documentation; passionate
+                about problem‑solving, modern UI design, and building impactful real‑world projects. &amp;
+                thoughtful design.</p>
+            <div class="hero__cta animate-in delay-4">
+                <a href="#projects" class="btn btn--primary">View My Work</a>
+                <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <div class="scroll-line"></div><span>Scroll</span>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number"></span> About Me</h2>
+            <div class="about__grid">
+                <div class="about__text reveal">
+                    <p>I'm a passionate developer at the intersection of <strong>design and technology</strong>. I build
+                        digital products that are both beautiful and performant.</p>
+                    <p>My journey started with curiosity and evolved into a commitment to crafting meaningful user
+                        experiences. Great software is invisible — it just <em>works</em>.</p>
+                    <p>When I'm not coding, I explore design trends, contribute to open-source, or experiment with
+                        creative projects.</p>
+                </div>
+                <div class="about__stats reveal">
+                    <div class="stat-card"><span class="stat-card__number" data-count="3">0</span><span
+                            class="stat-card__plus"></span><span class="stat-card__label">Projects</span></div>
+                    <div class="stat-card"><span class="stat-card__number" data-count="10">0</span>+<span
+                            class="stat-card__plus"></span><span class="stat-card__label">Technologies</span></div>
+                    <div class="stat-card"><span class="stat-card__number" data-count="2">0</span>+<span
+                            class="stat-card__plus"></span><span class="stat-card__label">Years Learning</span></div>
+                    <div class="stat-card"><span class="stat-card__number" data-count="100">0</span><span
+                            class="stat-card__plus">%</span><span class="stat-card__label">Passion</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number"></span> Skills &amp; Tools</h2>
+            <div class="skills__grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">&#9889;</div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 &amp; CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">&#128736;</div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">&#127912;</div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li>UI/UX Principles</li>
+                        <li>Figma</li>
+                        <li>Typography</li>
+                        <li>Color Theory</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">&#128295;</div>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git &amp; GitHub</li>
+                        <li>VS Code</li>
+                        <li>npm / Vite</li>
+                        <li>Terminal / CLI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number"></span> Featured Projects</h2>
+            <div class="projects__grid">
+
+                <article class="project-card reveal" id="project-portfolio">
+                    <div class="project-card__image">
+                        <div class="project-card__placeholder"><span>&#128188;</span></div>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                                class="tag">JS</span></div>
+                        <h3>Portfolio Website</h3>
+                        <p>Minimalist portfolio with dark/light toggle, smooth animations.</p>
+                        <div class="project-card__links"><a href="#" class="project-link">GitHub &#8599;</a><a href="#"
+                                class="project-link">Live &#8599;</a></div>
+                    </div>
+                </article>
+                <article class="project-card reveal" id="project-weather">
+                    <div class="project-card__image">
+                        <div class="project-card__placeholder"><span>&#127780;</span></div>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__tags"><span class="tag">NextJs</span><span class="tag">API</span><span
+                                class="tag">CSS</span></div>
+                        <h3>PasteApp</h3>
+                        <p>PasteApp lets users share and manage text snippets online, deployed seamlessly on Vercel.</p>
+                        <div class="project-card__links"><a href="https://github.com/sakbaj/PasteApp"
+                                class="project-link">GitHub &#8599;</a><a
+                                href="https://paste-app-kappa-umber.vercel.app" class="project-link">Live &#8599;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section__title reveal"><span class="section__number"></span> Get In Touch</h2>
+            <div class="contact__wrapper reveal">
+                <p class="contact__text">I'm always open to new opportunities. Whether you have a project in mind or
+                    just want to say hi — my inbox is open!</p>
+                <form class="contact__form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group"><input type="text" id="name" placeholder=" " required><label
+                                for="name">Your Name</label></div>
+                        <div class="form-group"><input type="email" id="email" placeholder=" " required><label
+                                for="email">Your Email</label></div>
+                    </div>
+                    <div class="form-group"><textarea id="message" rows="5" placeholder=" " required></textarea><label
+                            for="message">Your Message</label></div>
+                    <button type="submit" class="btn btn--primary btn--full" id="submitBtn"><span>Send Message
+                            &#10148;</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__socials">
+                <a href="https://github.com/sakbaj" target="_blank" class="footer__social-link"
+                    aria-label="GitHub">GH</a>
+                <a href="https://www.linkedin.com/in/saksham-bajpai-a1051a254/" target="_blank"
+                    class="footer__social-link" aria-label="LinkedIn">IN</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" class="footer__social-link" aria-label="Email">@</a>
+            </div>
+            <p class="footer__copy">Designed &amp; Built by <strong>Saksham</strong> &middot; &copy; 2026</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
